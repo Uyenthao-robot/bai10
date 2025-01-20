@@ -4,15 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 10: Tạo liên kết</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .home-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100px;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <h1>Bài 10: Tạo liên kết</h1>
 
     <!-- Luyện tập 1 -->
-    <h2>Luyện tập 1</h2>
-    <p>Viết đoạn mã để tạo liên kết quay về trang chủ <code>CLB.html</code> trong trang <code>thong_tin.html</code>.</p>
-    <h3>Lời giải chi tiết:</h3>
-    <pre>
+    <div class="section">
+        <h2>Luyện tập 1</h2>
+        <p>Viết đoạn mã để tạo liên kết quay về trang chủ <code>CLB.html</code> trong trang <code>thong_tin.html</code>.</p>
+        <p><strong>Lời giải chi tiết:</strong></p>
+        <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -25,13 +70,15 @@
     &lt;a href="CLB.html"&gt;Quay về trang chủ&lt;/a&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-    </pre>
+        </pre>
+    </div>
 
     <!-- Luyện tập 2 -->
-    <h2>Luyện tập 2</h2>
-    <p>Viết một trang web giới thiệu bản thân, trong đó để ít nhất 3 liên kết tới trang web (có thể là Facebook) của ba bạn cùng lớp.</p>
-    <h3>Lời giải chi tiết:</h3>
-    <pre>
+    <div class="section">
+        <h2>Luyện tập 2</h2>
+        <p>Viết một trang web giới thiệu bản thân, trong đó để ít nhất 3 liên kết tới trang web (có thể là Facebook) của ba bạn cùng lớp.</p>
+        <p><strong>Lời giải chi tiết:</strong></p>
+        <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -50,56 +97,43 @@
     &lt;p&gt;Cảm ơn bạn đã ghé thăm!&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-    </pre>
+        </pre>
+    </div>
 
     <!-- Vận dụng -->
-    <h2>Vận dụng</h2>
-    <p>Viết thêm các đoạn giới thiệu (địa điểm số, thành viên, thành tích, phí hội viên, điện thoại liên hệ) cho từng câu lạc bộ ở dưới bảng Lịch hoạt động công tác CLB thể thao rồi đặt liên kết từ tên câu lạc bộ trong bảng đến đoạn giới thiệu tương ứng.</p>
-    <h3>Lời giải chi tiết:</h3>
-    <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Lịch hoạt động công tác CLB thể thao&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Lịch hoạt động công tác CLB thể thao&lt;/h1&gt;
-    &lt;table&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Tên câu lạc bộ&lt;/th&gt;
-            &lt;th&gt;Lịch hoạt động&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;&lt;a href="#club1"&gt;Câu lạc bộ A&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Thứ Hai, Thứ Tư, Thứ Sáu - 18:00 đến 20:00&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;&lt;a href="#club2"&gt;Câu lạc bộ B&lt;/a&gt;&lt;/td&gt;
-            &lt;td&gt;Thứ Ba, Thứ Năm - 16:00 đến 18:00&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-
-    &lt;h2 id="club1"&gt;Câu lạc bộ A&lt;/h2&gt;
-    &lt;p&gt;Địa điểm: Sân Bóng XYZ&lt;/p&gt;
-    &lt;p&gt;Thành viên: 50&lt;/p&gt;
-    &lt;p&gt;Thành tích: Đạt giải nhất giải đấu Thể thao X năm 20XX&lt;/p&gt;
-    &lt;p&gt;Phí hội viên: 100.000 đồng/tháng&lt;/p&gt;
-    &lt;p&gt;Điện thoại liên hệ: 0123 456 789&lt;/p&gt;
-
-    &lt;h2 id="club2"&gt;Câu lạc bộ B&lt;/h2&gt;
-    &lt;p&gt;Địa điểm: Bể Bơi ABC&lt;/p&gt;
-    &lt;p&gt;Thành viên: 30&lt;/p&gt;
-    &lt;p&gt;Thành tích: Huy chương vàng môn bơi lội tại Hội thao Y năm 20XX&lt;/p&gt;
-    &lt;p&gt;Phí hội viên: 150.000 đồng/tháng&lt;/p&gt;
-    &lt;p&gt;Điện thoại liên hệ: 0987 654 321&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-    </pre>
+    <div class="section">
+        <h2>Vận dụng</h2>
+        <p>Viết thêm các đoạn giới thiệu (địa điểm số, thành viên, thành tích, phí hội viên, điện thoại liên hệ) cho từng câu lạc bộ ở dưới bảng Lịch hoạt động công tác CLB thể thao rồi đặt liên kết từ tên câu lạc bộ trong bảng đến đoạn giới thiệu tương ứng.</p>
+        <p><strong>Lời giải chi tiết:</strong></p>
+        <table>
+            <tr>
+                <th>Tên câu lạc bộ</th>
+                <th>Lịch hoạt động</th>
+            </tr>
+            <tr>
+                <td><a href="#club1">Câu lạc bộ A</a></td>
+                <td>Thứ Hai, Thứ Tư, Thứ Sáu - 18:00 đến 20:00</td>
+            </tr>
+            <tr>
+                <td><a href="#club2">Câu lạc bộ B</a></td>
+                <td>Thứ Ba, Thứ Năm - 16:00 đến 18:00</td>
+            </tr>
+        </table>
+        <h3 id="club1">Câu lạc bộ A</h3>
+        <p><strong>Địa điểm:</strong> Sân Bóng XYZ</p>
+        <p><strong>Thành viên:</strong> 50</p>
+        <p><strong>Thành tích:</strong> Đạt giải nhất giải đấu Thể thao X năm 20XX</p>
+        <p><strong>Phí hội viên:</strong> 100.000 đồng/tháng</p>
+        <p><strong>Điện thoại liên hệ:</strong> 0123 456 789</p>
+        <h3 id="club2">Câu lạc bộ B</h3>
+        <p><strong>Địa điểm:</strong> Bể Bơi ABC</p>
+        <p><strong>Thành viên:</strong> 30</p>
+        <p><strong>Thành tích:</strong> Huy chương vàng môn bơi lội tại Hội thao Y năm 20XX</p>
+        <p><strong>Phí hội viên:</strong> 150.000 đồng/tháng</p>
+        <p><strong>Điện thoại liên hệ:</strong> 0987 654 321</p>
+    </div>
 
     <!-- Nút Home -->
-    <hr>
-    <button onclick="https://uyenthao-robot.github.io/websitenhom5/">Home</button>
+    <a href="index.html" class="home-button">Home</a>
 </body>
 </html>
