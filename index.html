@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10: Tạo liên kết</title>
+</head>
+<body>
+    <h1>Bài 10: Tạo liên kết</h1>
+
+    <!-- Luyện tập 1 -->
+    <h2>Luyện tập 1</h2>
+    <p>Viết đoạn mã để tạo liên kết quay về trang chủ <code>CLB.html</code> trong trang <code>thong_tin.html</code>.</p>
+    <h3>Lời giải chi tiết:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Thông tin&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Thông tin CLB&lt;/h1&gt;
+    &lt;p&gt;Đây là trang thông tin về CLB của chúng ta.&lt;/p&gt;
+    &lt;a href="CLB.html"&gt;Quay về trang chủ&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <!-- Luyện tập 2 -->
+    <h2>Luyện tập 2</h2>
+    <p>Viết một trang web giới thiệu bản thân, trong đó để ít nhất 3 liên kết tới trang web (có thể là Facebook) của ba bạn cùng lớp.</p>
+    <h3>Lời giải chi tiết:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Giới thiệu bản thân&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Giới thiệu bản thân&lt;/h1&gt;
+    &lt;p&gt;Xin chào! Tôi là [Tên của bạn], đây là một trang web giới thiệu về bản thân tôi.&lt;/p&gt;
+    &lt;h2&gt;Bạn cùng lớp&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend1" target="_blank"&gt;Facebook của Bạn 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend2" target="_blank"&gt;Facebook của Bạn 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="https://www.facebook.com/friend3" target="_blank"&gt;Facebook của Bạn 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Cảm ơn bạn đã ghé thăm!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <!-- Vận dụng -->
+    <h2>Vận dụng</h2>
+    <p>Viết thêm các đoạn giới thiệu (địa điểm số, thành viên, thành tích, phí hội viên, điện thoại liên hệ) cho từng câu lạc bộ ở dưới bảng Lịch hoạt động công tác CLB thể thao rồi đặt liên kết từ tên câu lạc bộ trong bảng đến đoạn giới thiệu tương ứng.</p>
+    <h3>Lời giải chi tiết:</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Lịch hoạt động công tác CLB thể thao&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Lịch hoạt động công tác CLB thể thao&lt;/h1&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Tên câu lạc bộ&lt;/th&gt;
+            &lt;th&gt;Lịch hoạt động&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;a href="#club1"&gt;Câu lạc bộ A&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Thứ Hai, Thứ Tư, Thứ Sáu - 18:00 đến 20:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;a href="#club2"&gt;Câu lạc bộ B&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Thứ Ba, Thứ Năm - 16:00 đến 18:00&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;h2 id="club1"&gt;Câu lạc bộ A&lt;/h2&gt;
+    &lt;p&gt;Địa điểm: Sân Bóng XYZ&lt;/p&gt;
+    &lt;p&gt;Thành viên: 50&lt;/p&gt;
+    &lt;p&gt;Thành tích: Đạt giải nhất giải đấu Thể thao X năm 20XX&lt;/p&gt;
+    &lt;p&gt;Phí hội viên: 100.000 đồng/tháng&lt;/p&gt;
+    &lt;p&gt;Điện thoại liên hệ: 0123 456 789&lt;/p&gt;
+
+    &lt;h2 id="club2"&gt;Câu lạc bộ B&lt;/h2&gt;
+    &lt;p&gt;Địa điểm: Bể Bơi ABC&lt;/p&gt;
+    &lt;p&gt;Thành viên: 30&lt;/p&gt;
+    &lt;p&gt;Thành tích: Huy chương vàng môn bơi lội tại Hội thao Y năm 20XX&lt;/p&gt;
+    &lt;p&gt;Phí hội viên: 150.000 đồng/tháng&lt;/p&gt;
+    &lt;p&gt;Điện thoại liên hệ: 0987 654 321&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <!-- Nút Home -->
+    <hr>
+    <button onclick="https://uyenthao-robot.github.io/websitenhom5/">Home</button>
+</body>
+</html>
